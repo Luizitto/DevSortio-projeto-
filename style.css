@@ -6,8 +6,9 @@
 
 }
 
-body{
+body {
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 .wallpapper {
@@ -84,4 +85,56 @@ h2 {
 
 .sortear:active {
     opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 10px;
+    }
+
+
+    .min,
+    .max {
+        width: 220px;
+        height: 45px;
+        border-radius: 10px;
+        border-color: blueviolet;
+        font-size: 20px;
+        outline: none;
+        text-align: center;
+        color: dimgray;
+        transition: transform 0.3s ease;
+
+    }
+
+    .sortear {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 185px;
+        height: 35px;
+        border-radius: 15px;
+        font-size: 22px;
+        text-align: center;
+        background-color: #AEC346;
+        border: none;
+        cursor: pointer;
+    }
+
 }
